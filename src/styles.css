@@ -7,6 +7,14 @@ body {
   margin: 0 auto;
   /* aspect-ratio: 16/9; */
 }
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+}
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("/images/Creative-coding-photo_3.png");
@@ -34,6 +42,7 @@ header h3 {
   font-size: 26px;
   font-weight: 600;
   line-height: 1.5;
+  letter-spacing: 5px;
   margin: 0;
 }
 header a {
@@ -51,16 +60,61 @@ header a {
   padding: 13px 18px;
   font-family: "Source Code Pro", monospace;
 }
+footer .icon {
+  background: rgb(155, 149, 149);
+  border-radius: 22px;
+}
 footer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../images/Creative-coding-photo_3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   margin-top: 30px;
   text-align: center;
   font-family: "Source Code Pro", monospace;
-  font-weight: 100;
+  font-weight: bold;
   font-size: 12px;
+  padding: 100px 0x;
+
+  /* color: rgb(227, 232, 237); */
 }
-footer a {
+
+footer h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+footer p {
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 0.7;
+  margin-right: 20px;
+  margin-left: 20px;
+  line-height: 24px;
+}
+footer ul {
+  padding: 0;
   text-decoration: none;
-  color: rgb(175, 173, 173);
+}
+
+footer li {
+  list-style: none;
+  margin: 5px;
+  padding: 0;
+}
+footer li a {
+  color: black;
+}
+
+footer a {
+  color: white;
+  opacity: 0.7;
+}
+footer a .open-source {
+  text-decoration: none;
+  color: rgb(220, 218, 218);
+  opacity: 0.7;
   font-weight: 200;
 }
 
