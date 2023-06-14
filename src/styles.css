@@ -5,7 +5,9 @@ body {
 .container {
   max-width: 1400px;
   margin: 0 auto;
-  aspect-ratio: 16/9;
+}
+.text-center {
+  text-align: center;
 }
 .grid {
   display: grid;
@@ -13,6 +15,9 @@ body {
 }
 .img-responsive {
   max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  border: 4px solid black;
 }
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
@@ -20,10 +25,36 @@ body {
 .grid-3-columns-with-first-narrow {
   grid-template-columns: 1fr 2fr 2fr;
 }
-section {
-  max-width: 1200px;
+.card-body {
+  padding: 30px;
+  text-align: center;
+}
+.card-footer {
+  text-align: center;
+  padding: 0 30px 30px;
+}
+.btn {
+  display: block;
   margin: 0 auto;
-  padding: 100px 0;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 16px;
+  background-color: #636070;
+  text-decoration: none;
+  width: 120px;
+}
+section {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 100px;
+}
+section.secondary {
+  background: #f8f8f8;
 }
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -77,11 +108,46 @@ main h2 {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
-  margin: 0;
+  margin: 0 0 20px;
   letter-spacing: 5px;
   color: #272044;
-  opacity: 0.3;
-  text-transform: uppercase;
+  opacity: 0.3px;
+}
+
+main h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.5;
+  color: #272044;
+  margin: 0;
+}
+
+main h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  color: #272044;
+  margin: 0;
+}
+main h4 a {
+  text-decoration: none;
+  color: #272044;
+}
+
+main h5 {
+  font-weight: 700;
+  font-size: 13px;
+  margin-top: 5px;
+  line-height: 1;
+  color: #272044;
+  text-align: center;
+}
+main h6 {
+  margin: 0;
+  padding: 0;
+}
+main em {
+  font-style: italic;
 }
 main p {
   font-style: normal;
@@ -96,16 +162,15 @@ footer .icon {
   border-radius: 22px;
 }
 footer {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("../images/Creative-coding-photo_3.png");
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 30px;
+
   text-align: center;
   font-family: "Source Code Pro", monospace;
   font-weight: bold;
   font-size: 12px;
-  padding: 100px 0x;
 
   /* color: rgb(227, 232, 237); */
 }
@@ -122,6 +187,7 @@ footer p {
   font-size: 16px;
   opacity: 0.7;
   line-height: 24px;
+  color: rgb(196, 186, 173);
 }
 footer ul {
   padding: 0;
@@ -130,6 +196,8 @@ footer ul {
 footer li {
   font-size: 14px;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 footer li a {
   color: black;
@@ -138,10 +206,10 @@ footer li a {
 footer a {
   color: white;
   opacity: 0.7;
-}
-footer a .open-source {
   text-decoration: none;
-  color: rgb(220, 218, 218);
+}
+.open-source {
+  color: rgb(240, 117, 117);
   opacity: 0.7;
   font-weight: 200;
 }
