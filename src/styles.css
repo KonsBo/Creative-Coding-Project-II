@@ -11,7 +11,7 @@ body {
 }
 .grid {
   display: grid;
-  grid-gap: 64px;
+  grid-gap: 44px;
 }
 .img-responsive {
   max-width: 100%;
@@ -22,9 +22,23 @@ body {
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
 }
+
 .grid-3-columns-with-first-narrow {
   grid-template-columns: 1fr 2fr 2fr;
 }
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  width: 100%;
+  display: grid;
+}
+
+embed {
+  margin: 0 auto;
+  aspect-ratio: 1 / 1;
+  width: 100%;
+}
+
 .card-body {
   padding: 30px;
   text-align: center;
@@ -104,14 +118,22 @@ header a {
 main {
   background-color: rgb(222, 220, 220);
 }
+main h1 {
+  font-family: "Bebas Neue", sans-serif;
+  margin-top: 0;
+  font-size: 36px;
+  text-align: center;
+}
+
 main h2 {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  margin: 0 0 20px;
+  margin: 0;
   letter-spacing: 5px;
-  color: #272044;
+  color: #64626a;
   opacity: 0.3px;
+  font-family: "Poppins", sans-serif;
 }
 
 main h3 {
@@ -119,7 +141,8 @@ main h3 {
   font-size: 40px;
   line-height: 1.5;
   color: #272044;
-  margin: 0;
+  margin-bottom: 30px;
+  margin-top: 0;
 }
 
 main h4 {
@@ -166,20 +189,18 @@ footer {
     url("../images/Creative-coding-photo_3.png");
   background-repeat: no-repeat;
   background-size: cover;
-
   text-align: center;
   font-family: "Source Code Pro", monospace;
   font-weight: bold;
   font-size: 12px;
-
   /* color: rgb(227, 232, 237); */
 }
 
 footer h3 {
-  font-weight: 700;
+  font-weight: 800;
   font-size: 20px;
   line-height: 30px;
-  color: rgb(196, 186, 173);
+  color: rgb(252, 245, 236);
 }
 
 footer p {
@@ -194,24 +215,22 @@ footer ul {
 }
 
 footer li {
-  font-size: 14px;
+  font-size: 16px;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 footer li a {
-  color: black;
+  color: rgb(210, 204, 196);
 }
 
 footer a {
-  color: white;
+  color: rgb(255, 255, 255);
   opacity: 0.7;
   text-decoration: none;
 }
 .open-source {
-  color: rgb(240, 117, 117);
-  opacity: 0.7;
-  font-weight: 200;
+  color: rgb(246, 246, 249);
 }
 
 @media (max-width: 900px) {
@@ -237,5 +256,10 @@ footer a {
   }
   main h2 {
     text-align: center;
+  }
+  .embed {
+    aspect-ratio: 16 / 9;
+    display: block;
+    margin: 0 auto;
   }
 }
